@@ -28,6 +28,7 @@ requirements:
     - numpy >=1.7.0
     - lxml >=2.3.2
     - contextlib2 >=0.4
+    - openjpeg  # [win and py35]
 
 test:
   # Python imports
