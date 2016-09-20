@@ -5,8 +5,8 @@ package:
 
 source:
   fn: Glymur-{{ version }}.tar.gz
-  url: https://pypi.python.org/packages/f5/18/6c4a5ed2e9d830bc30b5a40853bfd65e86f10276dd98a7921bb30411856d/Glymur-0.8.6.tar.gz#md5=8e5bf27bc9154066320e3a76f3f6e97f
-  md5: 8e5bf27bc9154066320e3a76f3f6e97f
+  url: https://pypi.python.org/packages/f5/18/6c4a5ed2e9d830bc30b5a40853bfd65e86f10276dd98a7921bb30411856d/Glymur-0.8.6.tar.gz
+  sha256: 3008b482e7e427a8ebf79b96cbe82300d9b3f8c2275b944486991f74ffd6ec58
 
 build:
   number: 0
