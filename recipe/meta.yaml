@@ -37,10 +37,9 @@ test:
     - glymur
     - glymur.data
     - glymur.lib
-    - glymur.lib.test
-    - glymur.test
 
   commands:
+    - python -c "import glymur; j = glymur.Jp2k(glymur.data.nemo()); print(j)"
     - jp2dump --help
 
 about:
