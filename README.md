@@ -11,6 +11,18 @@ Summary: Tools for accessing JPEG2000 files
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/glymur-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/glymur-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/glymur-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/glymur-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/glymur-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/glymur-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/glymur/badges/version.svg)](https://anaconda.org/conda-forge/glymur)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/glymur/badges/downloads.svg)](https://anaconda.org/conda-forge/glymur)
+
 Installing glymur
 =================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `glymur` available on your platfor
 ```
 conda search glymur --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/glymur-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/glymur-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/glymur-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/glymur-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/glymur-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/glymur-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/glymur/badges/version.svg)](https://anaconda.org/conda-forge/glymur)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/glymur/badges/downloads.svg)](https://anaconda.org/conda-forge/glymur)
 
 
 Updating glymur-feedstock
