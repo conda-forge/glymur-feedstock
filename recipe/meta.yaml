@@ -1,15 +1,15 @@
-{% set version = "0.8.7" %}
+{% set version = "0.8.8" %}
 package:
   name: glymur
   version: {{ version }}
 
 source:
   fn: Glymur-{{ version }}.tar.gz
-  url: https://pypi.python.org/packages/1a/a6/4cf6ffa0b999b2b413c0d13182d59f3e5e21ee1e1b4217ef8c7c2eb8cb33/Glymur-0.8.7.tar.gz
-  sha256: b24fcee2ba162467f47f2faeabfc261321debb372ed12c3d9d148f63ed487eb1
+  url: https://pypi.python.org/packages/2a/04/2e822f71dd25911697d23c145bb2344fad6f21da23da07d277d1797df21a/Glymur-0.8.8.tar.gz
+  sha256: 97851098b6793517810a82fbfbba54968fe2b90fd4843d2e5ca926960e948684
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
     - jp2dump=glymur.command_line:main
@@ -29,6 +29,7 @@ requirements:
     - numpy >=1.7.0
     - lxml >=2.3.2
     - contextlib2 >=0.4
+    - openjpeg 2.1.*
 
 test:
   # Python imports
@@ -36,10 +37,9 @@ test:
     - glymur
     - glymur.data
     - glymur.lib
-    - glymur.lib.test
-    - glymur.test
 
   commands:
+    - python -c "import glymur; j = glymur.Jp2k(glymur.data.nemo()); print(j)"
     - jp2dump --help
 
 about:
