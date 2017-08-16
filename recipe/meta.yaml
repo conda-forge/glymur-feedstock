@@ -29,7 +29,7 @@ requirements:
     - numpy >=1.7.0
     - lxml >=2.3.2
     - contextlib2 >=0.4
-    - openjpeg >= 2.1.1
+    - openjpeg >=2.1.1
 
 test:
   # Python imports
