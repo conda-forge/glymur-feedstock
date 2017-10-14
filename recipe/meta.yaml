@@ -9,7 +9,7 @@ source:
   sha256: 7e2edd48be5472adef0e0cea36ddc9d86a4d195e022f902205d08f5af4dd153b
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
     - jp2dump=glymur.command_line:main
