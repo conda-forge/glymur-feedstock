@@ -1,15 +1,15 @@
-{% set version = "0.8.12" %}
+{% set version = "0.8.14" %}
 package:
   name: glymur
   version: {{ version }}
 
 source:
   fn: Glymur-{{ version }}.tar.gz
-  url: https://pypi.python.org/packages/82/05/e5eddbeea7d30eff4148a4c24a7db6c7a7d53da0b3e937608e934cfbf9c3/Glymur-0.8.12.tar.gz
-  sha256: 7e2edd48be5472adef0e0cea36ddc9d86a4d195e022f902205d08f5af4dd153b
+  url: https://pypi.python.org/packages/1f/0f/b5ccdeb6dcf5cc2d2b068a28e0518aaf86ba371c3bd8e4225f9e33a35f30/Glymur-0.8.14.tar.gz
+  sha256: a395c619fb9aa095f113967dd79521159a7f68ecad7728e6a3967ae039be0795
 
 build:
-  number: 2
+  number: 1
   script: python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
     - jp2dump=glymur.command_line:main
@@ -18,10 +18,10 @@ requirements:
   build:
     - python
     - setuptools
-    - numpy >=1.7.0
-    - lxml >=2.3.2
+    - numpy
+    - lxml
     - mock
-    - contextlib2 >=0.4
+    - contextlib2
 
   run:
     - python
