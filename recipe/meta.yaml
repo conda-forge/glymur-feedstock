@@ -5,11 +5,11 @@ package:
 
 source:
   fn: Glymur-{{ version }}.tar.gz
-  url: https://pypi.python.org/packages/1f/0f/b5ccdeb6dcf5cc2d2b068a28e0518aaf86ba371c3bd8e4225f9e33a35f30/Glymur-0.8.14.tar.gz
+  url: https://pypi.io/packages/source/G/Glymur/Glymur-{{ version }}.tar.gz
   sha256: a395c619fb9aa095f113967dd79521159a7f68ecad7728e6a3967ae039be0795
 
 build:
-  number: 1
+  number: 2
   script: python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
     - jp2dump=glymur.command_line:main
