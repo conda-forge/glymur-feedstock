@@ -9,13 +9,15 @@ source:
   sha256: 006ec841ec8782a0d5b7128499d30bdacd33397b9005bbb16b6b14dc8a8f25a6
 
 build:
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  noarch: python
+  number: 1
+  script: python -m pip install --no-deps --ignore-installed .
   entry_points:
     - jp2dump=glymur.command_line:main
 
 requirements:
-  build:
+  host:
+    - pip
     - python
     - setuptools
     - numpy
