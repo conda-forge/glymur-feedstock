@@ -14,14 +14,15 @@ Summary: Tools for accessing JPEG2000 files
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/glymur-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/glymur-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/glymur-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/glymur-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/glymur-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/glymur-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/glymur-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/glymur-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/glymur/badges/version.svg)](https://anaconda.org/conda-forge/glymur)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/glymur/badges/downloads.svg)](https://anaconda.org/conda-forge/glymur)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-glymur-green.svg)](https://anaconda.org/conda-forge/glymur) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/glymur.svg)](https://anaconda.org/conda-forge/glymur) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/glymur.svg)](https://anaconda.org/conda-forge/glymur) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/glymur.svg)](https://anaconda.org/conda-forge/glymur) |
 
 Installing glymur
 =================
