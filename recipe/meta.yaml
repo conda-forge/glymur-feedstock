@@ -1,4 +1,4 @@
-{% set version = "0.8.17" %}
+{% set version = "0.8.18" %}
 package:
   name: glymur
   version: {{ version }}
@@ -6,7 +6,7 @@ package:
 source:
   fn: Glymur-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/G/Glymur/Glymur-{{ version }}.tar.gz
-  sha256: 91e4198f49315151a0d25833e0669902afbc3705e7b41fd36e66cf5d642f672e
+  sha256: 2007f2f84c4ca6a5de0d678d035282ef2e27276002127b62517e92cca15e6962
 
 build:
   noarch: python
