@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About glymur
 ============
 
@@ -18,8 +14,17 @@ Summary: Tools for accessing JPEG2000 files
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/glymur-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/glymur-feedstock)
+
+<table><tr>
+    
+    <td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5572&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/glymur-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
