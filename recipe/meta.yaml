@@ -1,4 +1,4 @@
-{% set version = "0.8.18" %}
+{% set version = "0.8.19" %}
 package:
   name: glymur
   version: {{ version }}
@@ -6,12 +6,12 @@ package:
 source:
   fn: Glymur-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/G/Glymur/Glymur-{{ version }}.tar.gz
-  sha256: 2007f2f84c4ca6a5de0d678d035282ef2e27276002127b62517e92cca15e6962
+  sha256: 2636ebf8ea1ad20b5a5d3cf49526c195335d567da00f6b21f0298957ede23425
 
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - jp2dump=glymur.command_line:main
 
@@ -47,6 +47,7 @@ test:
 about:
   home: https://github.com/quintusdias/glymur
   license: MIT
+  license_file: LICENSE.txt
   summary: 'Tools for accessing JPEG2000 files'
 
 extra:
