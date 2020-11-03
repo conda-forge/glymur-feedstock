@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - jp2dump=glymur.command_line:main
@@ -25,7 +25,6 @@ requirements:
     - setuptools
     - numpy
     - lxml
-    - gdal
     - openjpeg >=2.1.1
 
 test:
