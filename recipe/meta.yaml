@@ -6,22 +6,22 @@ package:
 
 source:
   fn: Glymur-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/G/Glymur/Glymur-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/G/Glymur/Glymur-{{ version }}.tar.gz
   sha256: 18f1f3536fd76cd7fa92de4629950bee55522bdf8a4e94706ac34226d615ac5c
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - jp2dump=glymur.command_line:main
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - setuptools
     - numpy
     - lxml
@@ -30,6 +30,8 @@ requirements:
 
 test:
   # Python imports
+  requires:
+    - python {{ python_min }}
   imports:
     - glymur
     - glymur.data
