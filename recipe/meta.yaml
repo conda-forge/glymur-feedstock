@@ -1,4 +1,4 @@
-{% set version = "0.13.6" %}
+{% set version = "0.13.7" %}
 
 package:
   name: glymur
@@ -6,12 +6,12 @@ package:
 
 source:
   fn: Glymur-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/G/Glymur/Glymur-{{ version }}.tar.gz
-  sha256: 18f1f3536fd76cd7fa92de4629950bee55522bdf8a4e94706ac34226d615ac5c
+  url: https://pypi.org/packages/source/G/Glymur/glymur-{{ version }}.tar.gz
+  sha256: 82fa1e6213819ac65556e5c978ead6003aa76935182ea465e5ccbb462a399936
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - jp2dump=glymur.command_line:main
